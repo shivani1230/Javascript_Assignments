@@ -1,0 +1,49 @@
+//Assignment Q.2
+
+<html>
+<head>
+    <title>Copy text</title>
+    <style>
+        .form{
+         height: 400px;
+            width: 300px;
+            background-color: blueviolet;
+        }
+        .form-group{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .newcss{
+            text-indent: 20px;
+            border: solid 2px;
+            font-size: 100%;
+        }
+    </style>
+    </head>
+    <body>
+<center>
+    <div class="form">
+        <div class="form-group">
+     <b><u><h1>Registeration here</h1></u> </b>
+<input type="text" value="My world is beautiful" class="newcss" id="mynew"><br/><br/>
+
+<input type="text" value="" placeholder="Copied text here" class="newcss" id="new"><br/><br/>
+
+        <button onclick="myFunc()">Copy text</button>
+    </div>    </div>
+    </center>
+    
+        <script>
+    
+            function myFunc(){
+            let copy=document.getElementById("mynew");
+            let copy1=document.getElementById("new");
+            copy1.value=copy.value;
+        }
+        
+        </script>
+    
+    </body>
+</html>

@@ -1,0 +1,62 @@
+//Assignment Q.4
+
+<html>
+<heaad>
+    <title>Hobbies Assign</title>
+    </heaad>
+    <body>
+    <h1><b>Welcome..!!</b></h1>
+        <script>
+        let interest= [{
+            name:"Shivani",
+            age:23,
+            country:"India",
+            hobbies:['Dancing','Listening Music','Travelling'],
+        },
+            {
+            name:"Swamini",
+            age:26,
+            country:"Russia",
+            hobbies:['Drawing','Dancing Music','Reading'],
+            },
+           {
+            name:"Poorva",
+            age:32,
+            country:"India",
+            hobbies:['Travelling','Reading','Studying'],
+           },
+           {
+            name:"Rutu",
+            age:35,
+            country:"USA",
+            hobbies:['Write','Listening Music','Boxing'],
+           },
+            ];
+
+        
+            function display(interest){
+        console.log("People with age less than 30 : ");
+
+                interest.forEach(element =>{
+                
+                    if(element.age<30){
+                console.log(element);
+        }
+            });
+            }
+            display(interest);
+            
+            function count(interest){
+                console.log("People with country India : ");
+                
+                interest.forEach(element =>{
+                    if(element.country=="India"){
+                        console.log(element);
+                    }
+                });
+            }
+            count(interest);
+        
+        </script>
+    </body>
+</html>

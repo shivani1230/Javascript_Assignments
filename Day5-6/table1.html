@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Demo</title>
+        <style>
+            body{
+                background-color:moccasin;
+                 margin-left: 10%;
+                margin-right: 10%;
+                padding: 0%;
+            }
+            .ele{
+                height: 250px;
+                width: 50px;
+                margin-left: 10px;
+                margin-top: 50px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                /* background-color: burlywood; */
+            }
+            input{
+                height: 40px;
+                text-indent: 20px;
+                background-color: white;
+            }
+            .button{
+                padding: 10px;
+                color:black;
+                font-weight: bold;
+             }
+            .form{
+                margin-top: 20px;
+                margin-left: 25px;
+                }
+            .table{
+                width: 100%;
+                margin-top: 30px;
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+            th,td{
+                height: 40px;
+                text-align: center;
+                padding: 5px;;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>SA Group</h1>
+       
+        <div class="ele">
+             <h2>Employee Details..!!</h2>
+                 <div class="form">
+                    <form onsubmit="add(event)">
+                    <input type="text" required placeholder="Name" id="name">
+                    <input type="number" required placeholder="Age" id="age"> 
+                    <input type="text" required placeholder="City" id="city">
+                    <input type="number"required placeholder="Salary" id="salary">
+                        <br><br>
+                <button type="submit">Add Employee</button><br><br>
+             </form>
+             <div class="form1">
+                <input type="search" placeholder="Search here.." id="search" onkeyup="search()"/>
+            </div>
+                 </div>
+             <table border="1" class="table" cellspacing="1">  
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tdata"></tbody>
+                </table>
+            </div>
+            <script src="table1.js"></script>
+    </body>
+    </html>

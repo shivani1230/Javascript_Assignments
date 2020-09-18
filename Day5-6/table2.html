@@ -1,0 +1,103 @@
+<html>
+    <head>
+    <title>Demo2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .active{
+            
+            margin-left: 30%;
+            
+            background-color:navajowhite;
+            height:500px;
+            width: 550px;
+    
+     }
+     .ins{
+         margin-left: 10%;
+         margin-top: 15px;
+         width: 80%;
+         height: 40%;
+     }
+     .table{
+         width:80%;
+         margin-left: 5%;
+         
+         height:100%;
+         border-color:floralwhite;
+     }
+     th,td{
+        height: 100%;
+        text-align: center;
+        padding:0.5%;
+     }
+     input{
+         font-size: 12;
+         border-color:  black;
+         text-align: center;
+         height: 40px; 
+         border-radius: 20px;
+         padding: 0.7%;
+         width: 100px;
+         margin-top: 10px;
+        margin-right: 6px;
+     }
+     .search{
+         margin-bottom: 10px;
+         margin-left: 10%;
+         margin-top: 25px;
+     }
+     button{
+         padding: 10px;
+         height: 40px;
+         border-color: black;
+         margin-left: 30%;
+         background-color:skyblue;
+     }
+     h2{
+         margin-top: 4%;
+         margin-left: 30%;
+     }
+     .del{
+         height: 40px;
+         width: 100%;
+     }
+    </style>
+    </head>
+    <body>
+        <center><h1>Bus Management System</h1></center>
+        <div class="active">
+            <h2><u>Details of Bus</u></h2>
+            <div class="ins">
+
+                <form onsubmit="insert(event)">
+                    <input type="text" required placeholder="Bus Name" id="bname"/>
+                    <input type="text" required placeholder="Source Name" id="sname"/>
+                    <input type="text" required placeholder="Destination" id="dest"/><br>
+                    <input type="number" required placeholder="Bus Number" id="no"/>
+                    <input type="number" required placeholder="Capacity" id="cpcty"/><br><br>
+                 <button class="submit" required>Add bus</button>
+              </form> 
+             </div>
+             <div class="search">
+                <input type="text" placeholder="search here" onkeyup="search()" id="searching">
+             </div>
+                    <table border="1" class="table" cellspacing="1">  
+                        <thead>
+                            <tr>
+                                <th>Sr No</th>
+                                <th>Bus Name</th>
+                                <th>Source Name</th>
+                                <th>Destination</th>
+                                <th>Bus Number</th>
+                                <th>Passenger Capacity</th>
+                            </tr>
+                            </thead>
+                            <tbody class="tdata"></tbody>
+                        </table>
+                </div>
+            <script src="table2.js"></script>
+    </body>
+</html>

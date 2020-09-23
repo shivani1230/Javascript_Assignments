@@ -1,0 +1,165 @@
+<html>
+<head>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            height: 75px;
+            width: 100%;
+            background-color:blue;
+            line-height: 70px;
+        }
+        h1{
+            margin-left: 5%;
+            display: inline-block;
+            vertical-align: top;
+            width: 30%;
+            color:greenyellow;
+            font-style: italic;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .search{
+            height: 40px;
+            width: 20%;
+            display: inline-block;
+            overflow: hidden;
+            color: blanchedalmond;
+            margin-top: 2%;
+            vertical-align: top;
+            margin-bottom: 70px;
+            /* margin-left: 50px; */
+        }
+        .filter{
+        /* margin-left: 2px; */
+        display: inline-block;
+        height: 70px;
+        width: 30%;
+        overflow: hidden;
+        /* margin-top: -10%;  */
+        margin-bottom: 3%;
+        vertical-align: top;
+       }
+       .count{
+           display: inline-block;
+           height: 60px;
+           width: 20%;
+           overflow: hidden;
+           margin-top:70px;
+           margin-left: 25px ;
+       }
+       .cart{
+           margin-left: 0%;
+           display: inline-block;
+           width: 10%;
+           height: 3%;
+           overflow: hidden;
+       }
+       .bgbg{
+           margin-top: 1%;
+        display: inline-block;
+        width: 10%;
+        height: 5%;
+       }
+       .search input{
+            height: 40px;
+            width: 100%;
+            text-indent: 20px;
+            border-radius: 25px;
+            outline: none;
+            border: 1px solid gray;
+       }
+       
+       .products{
+           width: 100%;
+           height: auto;
+       }
+       
+       .productwraap{
+           height: auto;
+           width: 80%;
+           background-color: lightslategrey;
+           margin-left: 10%;
+           /* margin-top: 25px; */
+           margin-bottom: 50px;
+           /* text-align: right; */
+       }
+       .product{
+           height: auto;
+           width: 25%;
+           display: inline-block;
+           margin-top: 25px;
+           margin-left: 6.25%;
+           background-color:rgb(228, 167, 179);
+           border: 1px solid gray;
+       }
+       .proimg{
+           height: 300px;
+           width: 100%;
+           /* background-color: black; */
+           overflow: hidden;
+       }
+        
+       .product p{
+            padding: 5px;
+            padding-left: 10px;
+       }
+       .product p{
+           color: gray;
+       }
+       button{
+           /* margin-left: 50px; */
+           padding: 10px;
+           
+       }
+       
+      
+    </style>
+
+    <body>
+        <div class="header">
+        <h1>Global Shopping GS+</h1>
+            
+<div class="search">
+    <input type="search" onkeyup="searchProduct(this.value)" placeholder="Search for product here..!!"/>
+</div>
+    
+    <div class="filter" id="filt">
+        <h5 style="color: blanchedalmond; font-family: sans-serif; height: 20px; margin-left: 35px;">Filter by Price</h5>
+    
+    <input style="width: 25%; margin-top: 3%; border-radius: 25px; height: 25px;
+    text-indent: 20px; margin-left: 10px;" type="number" id="min" placeholder="Min Price"/>
+    
+    <input style="width: 25%; margin-top: 3%; border-radius: 25px; height: 25px;
+    text-indent: 20px; margin-left: 10px;"type="number" id="max" placeholder="Max Price"/>
+    
+    <button style="background-color:whitesmoke; text-indent:0.6%; height: 30px;
+    margin-left: 5px; border-radius: 25px; width: 50px; margin-top: 4%; padding: 0%;" onclick="filter()">Filter</button>
+    
+</div>
+    
+    
+        <div class="bgbg">
+        <p style="color:white; font-family: sans-serif; display: inline-block;">Count :</p>
+        <p style="display: inline-block; color: white; " id="num">0</p>
+    </div>
+</div>
+
+<div class="products">
+    <div class="productwrapper" id="productwrapper">
+    </div>
+    </div>
+
+   <div class="cartwrap" style="padding-bottom:5%;">
+       <div class="products">
+           <h2 style="font-family: Arial, Helvetica, sans-serif; margin-left: 60px; margin-top: 20px;">Your Cart Products..!!</h2>
+           <div class="productwrapper" id="cart"></div>
+       </div>
+   </div>
+
+   
+        <script src="demo1.js"></script>
+    </body>
+</head>
+</html>
